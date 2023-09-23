@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", sans-serif; */
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  max-width: 1200px;
+  background-color: rgba(242, 220, 144, 1);
+}

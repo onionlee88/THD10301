@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>會員註冊</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+
+  
+  <style>
+    
+    h1.h1{
+      font-size: 28px;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-family: 微軟正黑體;
+      font-weight: 600;
+            }
+          
+        main.main{
+          text-align: center;
+          margin-bottom: 40px;
+        }
+
+        main.main div.top-1{
+        display: flex;
+        gap: 10px;
+        /* border: 1px solid #000; */
+        height: 50px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 500px;
+        font-family: 微軟正黑體;
+        font-weight: 700;
+        font-size: 20px;
+        border-radius: 10px;   
+        line-height: 35px;
+        margin:20px auto;
+        color: rgba(46, 116, 120, 1);
+        background-color: rgba(217, 217, 217, 1);
+        top: 50%;
+        align-items: center;
+        }
+        main.main div.top-1 input{
+  
+        border: 0px;
+        width: 300px;
+        
+      }
+        div.top-1 input{
+          height: 25px;
+
+        }
+
+
+          form.form{
+        width: 500px;
+        margin: 0 auto;
+          }
+
+          fieldset.fieldset{
+            border: 1px solid #000;
+          }
+
+          p.log-in{
+            color:rgba(250, 44, 44, 1) ;
+            font-size: 20px;
+            font-family: 微軟正黑體;
+            font-weight: 600;
+            text-align:center;
+            padding-left: 30%;
+ 
+          }
+
+input.register{
+  width: 500px;
+  height: 80px;
+  height: 80px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-family: 微軟正黑體;
+  font-weight: 600;
+  border-radius: 20px;
+  color: rgba(250, 182, 52, 1);
+  background-color: rgba(105, 112, 137, 1);
+}
+
+div.input-ft{
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+ }
+
+
+input.ch-3{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 微軟正黑體;
+  font-weight: 600;
+  font-size: 20px;
+  
+  border: 0px;
+  
+}
+
+p.log-in a{
+  font-size: 24px;
+  text-decoration: none;
+  color: rgba(250, 44, 44, 1);
+}
+  </style>
+
+
+<body>
+  <header class="header">
+
+    <nav class="nav">
+     
+      <div class="header_left">
+        <img class="LOGO" src="../image/icon/LOGO.png" alt="EHWlogo">
+      </div>
+
+
+              <div class="mid_div">
+                   <div class="nav-ch">
+                          
+                              <ul class="new-menu">
+                                  <li class="first"><a href="index.html">首頁</a></li>
+                                  <li class="first"><a href="share.html">食譜分享</a></li>
+                                  <li class="first"><a href="story.html">品牌故事</a></li>
+                                  <li class="first"><a href="Calorie.html">卡路里計算</a></li>
+                                  <li class="first share">健康餐選擇 
+                                          <ul class="chose">
+                                            <li class="eat"><a href="healthfood.html">地中海飲食</a></li>
+                                            <li class="eat"><a href="healthfood.html">211飲食</a></li>
+                                            <li class="eat"><a href="healthfood.html">得舒飲食</a></li>
+                                        </ul>
+                                  </li>
+                              </ul>     
+                    </div>
+
+            </div>
+
+              <div class="header_right ">
+                <button class="bt-buy" > 
+                  <img class="bt-img" src="../image/icon/buy.png" alt="購物車"><a class="car" href="cart.html">購物車</a>
+                </button>
+                <button class="bt-memeber"src=會員登入.html><a href="member.html">會員註冊</a></button>
+              </div> 
+            </nav>
+
+
+          </header>
+          <div class="header-back"></div>
+
+        <!--                    上方圖片                -->
+
+        <h1 class="h1">註冊會員</h1>
+        
+        <main class="main">
+        <div class="top">
+              <div class="top-1">
+                  <p>姓名:</p><input type="text">
+              </div>
+              <div  class="top-1">
+                <p>手機號碼:</p><input type="text">
+              </div>
+        </div>
+      
+
+        <p class="log-in"><a href="login.html">登入帳號</a></p>
+
+ 
+        <input type="submit" class="register" name="" id="" value="註冊">
+
+        <div class="input-ft">
+          <input class="ch-3" type="submit" value="Email註冊會員">
+          <input class="ch-3" type="submit" value="使用Facebook註冊">
+          <input class="ch-3" type="submit" value="以Google註冊">
+        </div>
+
+    
+
+
+      </main>
+
+
+
+        <footer class="footer">
+          <h2 class="ft_h2">聯絡我們</h2>
+          <ul class="footer_list">
+      
+            <li style="display: flex;margin-bottom:10px ;" > <img  src="../image/icon/phone.png" alt="電話:02-1234-5678">
+              <p>電話:02-1234-5678</p>
+            </li>
+            <li style="display: flex;margin-bottom:10px "> <img  src="../image/icon/e-mail.png" alt="e-mail:food@gmail.com">
+              <p>e-mail:healthyfood@gmail.com</p>
+            </li>
+            <li style="display: flex;margin-bottom:10px "> <img  src="../image/icon/instagram.png" alt="Eat_healthy_everyday">
+              <p>Eat_healthy_everyday</p>
+            </li>
+          </ul>
+          <h3> 本網站為緯育TibaMe前端工程師專業技術養成班THD103學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊 [緯育TibaMe] ，後續會由專人協助處理。
+            <br>參考資源: 常常好食、愛料理、中保無限。</h3>
+      
+        </footer>
+
+
+</body>
+
+</html>
