@@ -10,6 +10,5 @@ body {
 body {
   padding: 0px;
   margin: 0px;
-  max-width: 1200px;
-  background-color: rgba(242, 220, 144, 1);
+  /* max-width: 1200px; */
 }

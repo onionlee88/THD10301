@@ -10,40 +10,120 @@
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
 
-  
+
   <style>
-    
-    
-  h1{
-    font-size: 28px;
-    font-weight: 600 ;
-    font-family:微軟正黑體;
-    margin: 20px;
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      font-family: 微軟正黑體;
+      margin: 50px 0px 0px 70px;
 
-  }
+    }
 
-  main.main{
-    color: rgb(255, 255, 255);
-    margin: 20px;
-    padding-top: 20px;
-    font-size: 24px;
-    font-weight: 600 ;
-    padding: 15px;
-    height: 400px;
-    font-family:微軟正黑體;
-    border-radius: 15px;
-    background-color: rgba(95, 185, 190, 1);
+    main.main {
+      color: rgba(0, 0, 0, 1);
+      margin: 40px 50px 0px 50px;
+      padding-top: 20px;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 15px;
+      height: 100%;
 
-  }
+      border-radius: 15px;
+      background-color: rgba(255, 216, 79, 1);
+    }
 
-p.main{
-  margin-bottom: 30px;
-line-height: 50px;
-  text-align: center;
-}
+    h2.h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+
+    div.content {
+      margin-bottom: 30px;
+      line-height: 50px;
+      text-align: center;
+      font-family: 微軟正黑體;
+      padding: 10px;
+    }
+
+    div.content p.main-1 {
+      text-align: left;
+      margin-bottom: 20px;
+      text-indent: 2em;
+      padding: 10px;
+    }
+
+    div.content p.main-2 {
+      text-align: left;
+      margin-bottom: 20px;
+      text-indent: 2em;
+      padding: 10px;
+    }
+
+    div.content p.main-3 {
+      text-align: left;
+      margin-bottom: 20px;
+      text-indent: 2em;
+      padding: 10px;
+    }
+
+    /* =========== 麵包削 =========== */
+    div.breadcrumb {
+      /* border: 1px solid #000; */
+      padding: 5px 10px;
+      margin-top: 45px;
+      margin-left: 70px;
+      width: 200px;
+    }
+
+    div.breadcrumb ol.breadcrumb_list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0;
+    }
+
+    div.breadcrumb ol.breadcrumb_list>li {
+      /*   border: 1px solid red; */
+      display: inline-block;
+      color: gray;
+      font-size: 20px;
+      font-family: 微軟正黑體;
+      font-weight: 600;
+    }
 
 
 
+    /* 利用 ::before 擬似元素，創造斜線做為分隔 */
+    div.breadcrumb ol.breadcrumb_list>li::before {
+      content: " /";
+      font-size: 18px;
+      color: gray;
+      margin: 0 10px;
+    }
+
+    /* 第一個 li 元素，將 ::before 設定回來需要的 */
+    div.breadcrumb ol.breadcrumb_list>li:first-child::before {
+      display: none;
+    }
+
+
+    /* 基本文字樣式 */
+    div.breadcrumb ol.breadcrumb_list>li>a {
+      /*   border: 1px solid blue; */
+      text-decoration: none;
+      display: inline-block;
+      color: #007bff;
+
+    }
+
+    /* 滑動移過後改變文字顏色 */
+    div.breadcrumb ol.breadcrumb_list>li>a:hover {
+      color: #0056b3;
+    }
   </style>
 
 
@@ -54,84 +134,96 @@ line-height: 50px;
   <header class="header">
 
     <nav class="nav">
-     
+
       <div class="header_left">
-        <img class="LOGO" src="./image/icon/LOGO.png" alt="EHWlogo">
+
+        <a href="./index.html"><img class="LOGO" src="./image/icon/LOGO.png" href="index.html" alt="EHWlogo"></a>
       </div>
 
 
-              <div class="mid_div">
-                   <div class="nav-ch">
-                          
-                              <ul class="new-menu">
-                                  <li class="first"><a href="index.html">首頁</a></li>
-                                  <li class="first"><a href="share.html">食譜分享</a></li>
-                                  <li class="first"><a href="story.html">品牌故事</a></li>
-                                  <li class="first"><a href="Calorie.html">卡路里計算</a></li>
-                                  <li class="first share">健康餐選擇 
-                                          <ul class="chose">
-                                            <li class="eat"><a href="healthfood.html">地中海飲食</a></li>
-                                            <li class="eat"><a href="healthfood.html">211飲食</a></li>
-                                            <li class="eat"><a href="healthfood.html">得舒飲食</a></li>
-                                        </ul>
-                                  </li>
-                              </ul>     
-                    </div>
+      <div class="mid_div">
+        <div class="nav-ch">
 
-            </div>
-
-              <div class="header_right ">
-                <button class="bt-buy" > 
-                  <img class="bt-img" src="./image/icon/buy.png" alt="購物車"><a class="car" href="cart.html">購物車</a>
-                </button>
-                <button class="bt-memeber"src=會員登入.html><a href="member.html">會員註冊</a></button>
-              </div> 
-            </nav>
-
-
-          </header>
-          <div class="header-back"></div>
-
-        <!--                    上方圖片                -->
-
-
-
-
-      <h1>品牌故事</h1>  
-
-      <main class="main">
-
-
-    <p class="main">現今通膨環境下，許多人不得不開始為生活精打細算，在生活中也經常碰到吃外食的情況，而有些店家料理的方式，超乎常人的想像(黑暗料理)。所以希望能幫助人們能有健康的飲食，也能幫助人們在家也可以做簡易的料理，或是外食可以吃的健康一些。</p>
-    <p class="main">為幫助想改善飲食習慣的人、想健康飲食的人、想學習做菜的人、上班族能有更好的健康身體，     EHW推出了以三大類(地中海飲食.211飲食.得舒飲食)的健康餐點，同時也提供點心讓大家可以選購，於網站也提供飲食知識給大家，希望能幫助人們在生活中能透過飲食照顧好自己的健康。</p>
-
-
-
-
-    </main>
-
-
-
-
-
-        <footer class="footer">
-          <h2 class="ft_h2">聯絡我們</h2>
-          <ul class="footer_list">
-      
-            <li style="display: flex;margin-bottom:10px ;" > <img  src="./image/icon/phone.png" alt="電話:02-1234-5678">
-              <p>電話:02-1234-5678</p>
-            </li>
-            <li style="display: flex;margin-bottom:10px "> <img  src="./image/icon/e-mail.png" alt="e-mail:food@gmail.com">
-              <p>e-mail:healthyfood@gmail.com</p>
-            </li>
-            <li style="display: flex;margin-bottom:10px "> <img  src="./image/icon/instagram.png" alt="Eat_healthy_everyday">
-              <p>Eat_healthy_everyday</p>
+          <ul class="new-menu">
+            <li class="first"><a href="share.html">食譜分享</a></li>
+            <li class="first"><a href="story.html">品牌故事</a></li>
+            <li class="first"><a href="Calorie.html">卡路里計算</a></li>
+            <li class="first share">健康餐選擇
+              <ul class="chose">
+                <li class="eat"><a href="healthfood.html">地中海飲食</a></li>
+                <li class="eat"><a href="healthfood.html">211飲食</a></li>
+                <li class="eat"><a href="healthfood.html">得舒飲食</a></li>
+              </ul>
             </li>
           </ul>
-          <h3> 本網站為緯育TibaMe前端工程師專業技術養成班THD103學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊 [緯育TibaMe] ，後續會由專人協助處理。
-            <br>參考資源: 常常好食、愛料理、中保無限。</h3>
-      
-        </footer>
+        </div>
+
+      </div>
+
+      <div class="header_right ">
+        <button class="bt-buy">
+          <img class="bt-img" src="./image/icon/buy.png" alt="購物車"><a class="car" href="cart.html">購物車</a>
+        </button>
+        <button class="bt-memeber" src=會員登入.html><a href="member.html">會員註冊</a></button>
+      </div>
+    </nav>
+
+
+  </header>
+  <div class="header-back"></div>
+
+  <!--                    上方圖片                -->
+  <div class="img_block"></div>
+
+  <div class="breadcrumb">
+    <ol class="breadcrumb_list">
+      <li><a href="./index.html">首頁</a></li>
+      <li>品牌故事</li>
+    </ol>
+  </div>
+
+
+
+  <h1>品牌故事</h1>
+
+  <main class="main">
+    <h2 class="h2">理念:</h2>
+    <div class="content">
+      <p class="main-1">
+        現今通膨環境下，許多人不得不開始為生活精打細算，在生活中也經常碰到吃外食的情況，而有些店家料理的方式，超乎常人的想像(黑暗料理)。所以希望能幫助人們能有健康的飲食，也能幫助人們在家也可以做簡易的料理，或是外食可以吃的健康一些。
+      </p>
+      <p class="main-2">
+        本站提供多樣的健康飲食方式，以及分享相關的食材知識。同時也提供到店自取及訂購食材回家料理的服務，或是透過學習網站上的食譜，在家料理的功能，幫助想改善健康或是想學習料理的人能更養生
+        ，讓外食族也可以吃得更健康! </p>
+      <p class="main-3">
+        為幫助想改善飲食習慣的人、想健康飲食的人、想學習做菜的人、上班族能有更好的健康身體!EWH推出了以三大類的健康餐點，如:地中海飲食、211飲食、得舒飲食，希望能幫助人們在生活中能透過飲食照顧好自己的健康。 </p>
+
+    </div>
+
+  </main>
+
+
+
+
+  <footer class="footer">
+    <h3 class="ft_h3">聯絡我們</h3>
+    <ul class="footer_list">
+
+      <li class="ft_h3"> <img src="./image/icon/phone.svg" alt="電話:02-1234-5678">
+        <p>電話:02-1234-5678</p>
+      </li>
+      <li class="ft_h3"> <img src="./image/icon/instagram.svg" alt="e-mail:food@gmail.com">
+        <p>e-mail:healthyfood@gmail.com</p>
+      </li>
+      <li class="ft_h3"> <img src="./image/icon/e-mail.svg" alt="Eat_healthy_everyday">
+        <p>Eat_healthy_everyday</p>
+      </li>
+    </ul>
+    <h3 class="reference"> 本網站為緯育TibaMe前端工程師專業技術養成班THD103學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊 [緯育TibaMe] ，後續會由專人協助處理。
+      <br>參考資源: 常常好食、愛料理、中保無限。
+    </h3>
+
+  </footer>
 
 
 

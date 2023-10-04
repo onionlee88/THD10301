@@ -1,6 +1,6 @@
 header.header {
   /* border: 3px solid rgb(0, 0, 0); */
-  background-color: rgba(210, 163, 97, 1);
+  background-color: rgba(255, 166, 41, 1);
   padding: 2px;
   height: 65px;
   position: fixed;
@@ -56,6 +56,8 @@ div.mid_div {
 div.mid_div a {
   text-decoration: none;
   color: aliceblue;
+  width: 120px;
+  text-align: center;
 }
 
 div.mid_div li.first {
@@ -65,12 +67,19 @@ div.mid_div li.first {
   font-size: 20px;
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
+  width: 130px;
+}
+
+li.share p {
+  text-align: center;
+  /* border: 1px solid #000; */
+  width: 130px;
 }
 
 li.eat a {
   /* border: 1px solid #000; */
   color: rgb(152, 151, 151);
-  width: 110px;
+  width: 10px;
 }
 
 div.mid_div ul.new-menu {
@@ -127,6 +136,7 @@ nav.nav div.header_right button.bt-buy {
   background-color: rgba(157, 42, 42, 1);
   display: flex;
   align-items: center;
+  border: none;
 }
 a.car,
 button.bt-memeber > a {
@@ -145,4 +155,5 @@ nav.nav div.header_right button.bt-memeber {
   border-radius: 5px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(157, 42, 42, 1);
+  border: none;
 }
