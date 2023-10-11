@@ -8,6 +8,10 @@
 <link rel="stylesheet" href="./css/all.css">
 <link rel="stylesheet" href="./css/header.css">
 <link rel="stylesheet" href="./css/footer.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500&display=swap" rel="stylesheet">
 
 
 <style>
@@ -62,7 +66,6 @@
 
   div.ch-eat-1 {
     color: rgba(92, 92, 92, 1);
-    font-family: 微軟正黑體;
     font-weight: 700;
     margin-left: 10px;
     width: 180px;
@@ -71,7 +74,6 @@
 
   div.ch-eat-2 {
     color: rgba(92, 92, 92, 1);
-    font-family: 微軟正黑體;
     font-weight: 700;
     margin-left: 10px;
     /* border: 1px solid #000; */
@@ -79,7 +81,6 @@
 
   div.ch-eat-3 {
     color: rgba(92, 92, 92, 1);
-    font-family: 微軟正黑體;
     font-weight: 700;
     margin-left: 10px;
 
@@ -109,14 +110,14 @@
   div.search {
     padding: 10px;
     display: flex;
-    width: 345px;
+    width: 360px;
     margin: auto 0;
-    height: 45px;
+    height: 50px;
     border-radius: 10px;
     border: 2px solid rgba(92, 92, 92, 1);
     background-color: rgba(255, 216, 79, 1);
     align-items: center;
-    margin-left: 100px;
+    margin-left: 40px;
   }
 
   div.search p {
@@ -142,6 +143,12 @@
     border-radius: 6px;
   }
 
+  div.search button {
+    border: 3px solid #b1b1b1;
+    margin-left: 5px;
+    border-radius: 5px;
+
+  }
 
   /*========================== 種類選擇======================== */
   h2.body {
@@ -162,6 +169,7 @@
 
   main.main {
     padding: 30px;
+    width: 1200px;
   }
 
   div.three span {
@@ -183,7 +191,6 @@
   div.eat-one span {
     font-size: 20px;
     padding: 10px;
-    font-family: 微軟正黑體;
     font-weight: 600;
     border-radius: 5px;
     color: rgba(0, 0, 0, 1);
@@ -232,7 +239,6 @@
 
     font-size: 20px;
     padding: 10px;
-    font-family: 微軟正黑體;
     font-weight: 600;
     border-radius: 5px;
     color: rgba(0, 0, 0, 1);
@@ -253,7 +259,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 80px;
-
+    align-items: center;
   }
 
   main.main div.threemethod div.eat-three img {
@@ -267,7 +273,6 @@
 
     font-size: 20px;
     padding: 10px;
-    font-family: 微軟正黑體;
     font-weight: 600;
     border-radius: 5px;
     color: rgba(0, 0, 0, 1);
@@ -324,15 +329,12 @@
     margin: 0 0 15px 0;
     font-size: 24px;
     font-weight: 600;
-    font-family: 微軟正黑體;
-
   }
 
   article.card p {
     font-size: 20px;
     margin: 0;
     font-weight: 400;
-    font-family: 微軟正黑體;
   }
 
   main.main div.cards {
@@ -360,7 +362,6 @@
     margin: 0px;
     font-size: 28px;
     font-weight: 600;
-    font-family: 微軟正黑體;
   }
 
   div.content_block div.quantity p.price {
@@ -403,7 +404,6 @@
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 1);
     padding: 15px;
-    font-family: 微軟正黑體;
     font-weight: 600;
     line-height: 20px;
   }
@@ -424,9 +424,6 @@
     font-size: 20px;
     font-weight: 600;
     border-radius: 10px;
-    font-family: 微軟正黑體;
-
-
   }
 
   /* 飲食種類介紹 */
@@ -457,7 +454,6 @@
     display: inline-block;
     color: gray;
     font-size: 20px;
-    font-family: 微軟正黑體;
     font-weight: 600;
   }
 
@@ -512,7 +508,6 @@
     display: inline-block;
     color: gray;
     font-size: 20px;
-    font-family: 微軟正黑體;
     font-weight: 600;
   }
 
@@ -609,16 +604,20 @@
     <div class="ch-eat">
       <h1 class="body">種類選擇:</h1>
       <span class="span-ch-eat">
-        <div class="ch-eat-1"><input type="checkbox" class="chose"><span class="ch-p">地中海飲食</span></div>
-        <div class="ch-eat-2"><input type="checkbox" class="chose"><span class="ch-p">211飲食</span></div>
-        <div class="ch-eat-3"><input type="checkbox" class="chose"><span class="ch-p">得舒飲食</span></div>
+        <div class="ch-eat-1"><input type="checkbox" id="ch1" name="ch1" class="chose" /><label class="ch-p"
+            for="ch1">地中海飲食</label></div>
+        <div class="ch-eat-2"><input type="checkbox" id="ch2" name="ch2" class="chose" /><label class="ch-p"
+            for="ch2">211飲食</label></div>
+        <div class="ch-eat-3"><input type="checkbox" id="ch3" name="ch3" class="chose" /><label class="ch-p"
+            for="ch3">得舒飲食</label></div>
       </span>
 
 
       <div class="search">
-        <p>商品搜尋</p><img src="./image/icon/search.svg" alt="search">
-        <input class="search" type="text">
-
+        <img src="./image/icon/search.svg" alt="search">
+        <input class="search" type="text"><button>
+          <p>商品搜尋</p>
+        </button>
       </div>
 
 

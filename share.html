@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500&display=swap" rel="stylesheet">
 
 
   <style>
@@ -16,13 +20,11 @@
 
 
     div.grid_container {
-      /*   border: 1px solid red; */
-      /*   padding: 10px; */
+
       display: grid;
-      gap: 1px;
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-areas: "header header section" "aside main section" "aside footer footer";
-      width: 80%;
+      width: 1100px;
       margin: auto;
     }
 
@@ -76,6 +78,11 @@
     }
 
     /*======================================== 食材 通用指令============================================ */
+    main.main {
+      text-align: center;
+      margin-bottom: 40px;
+      width: 1200px;
+    }
 
     h2.h2-kind {
       font-size: 28px;
@@ -105,7 +112,6 @@
       justify-content: center;
       margin-top: 10px;
       text-align: center;
-      font-family: 微軟正黑體;
       font-weight: 600;
       font-size: 24px;
     }
@@ -147,7 +153,6 @@
       width: 500px;
       padding-top: 10px;
       font-size: 24px;
-      font-family: 微軟正黑體;
       font-weight: 600;
     }
 
@@ -177,7 +182,6 @@
       justify-content: center;
       margin-top: 10px;
       text-align: center;
-      font-family: 微軟正黑體;
       font-weight: 600;
       font-size: 24px;
     }
@@ -212,7 +216,6 @@
       width: 500px;
       padding-top: 10px;
       font-size: 24px;
-      font-family: 微軟正黑體;
       font-weight: 600;
     }
 
@@ -245,7 +248,6 @@
       justify-content: center;
       margin-top: 10px;
       text-align: center;
-      font-family: 微軟正黑體;
       font-weight: 600;
       font-size: 24px;
       margin-bottom: 60px;
@@ -282,7 +284,6 @@
       width: 510px;
       padding-top: 10px;
       font-size: 24px;
-      font-family: 微軟正黑體;
       font-weight: 600;
     }
 
@@ -323,7 +324,6 @@
       display: inline-block;
       color: gray;
       font-size: 20px;
-      font-family: 微軟正黑體;
       font-weight: 600;
     }
 
@@ -403,41 +403,44 @@
 
 
   </header>
-  <div class="header-back"></div>
-
-  <!--                    上方圖片                -->
-  <div class="img_block"></div>
-
-
-
-  <div class="grid_container">
-    <header class="grid_item">
-
-    </header>
-    <aside class="grid_item">
-
-    </aside>
-    <main class="grid_item">
-
-    </main>
-    <section class="grid_item">
-
-    </section>
-    <footer class="grid_item">
-
-    </footer>
-  </div>
-
-
-  <div class="breadcrumb">
-    <ol class="breadcrumb_list">
-      <li><a href="./index.html">首頁</a></li>
-      <li>食譜分享</li>
-    </ol>
-  </div>
-  <!--                    當季食材                -->
 
   <main class="main">
+    <div class="header-back"></div>
+
+    <!--                    上方圖片                -->
+    <div class="img_block"></div>
+
+
+
+    <div class="grid_container">
+      <header class="grid_item">
+
+      </header>
+      <aside class="grid_item">
+
+      </aside>
+      <main class="grid_item">
+
+      </main>
+      <section class="grid_item">
+
+      </section>
+      <footer class="grid_item">
+
+      </footer>
+    </div>
+
+
+
+    <div class="breadcrumb">
+      <ol class="breadcrumb_list">
+        <li><a href="./index.html">首頁</a></li>
+        <li>食譜分享</li>
+      </ol>
+    </div>
+    <!--                    當季食材                -->
+
+
 
     <h2 class="h2-kind">當季食材</h2>
 
